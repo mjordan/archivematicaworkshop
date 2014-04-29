@@ -42,6 +42,8 @@ Archivematica's user interface is called the Dashboard. Its two basic functions 
 1. to allow users to add content to Archivematica and
 2. to allow users to choose from among the digital preservation options applicable to the content they or others have added.
 
+The Dashboard is fairly simple: for the most part, it provides a list of microservices and prompts the user for a decision when one needs to be made:
+
 ![Archivematica Dashboard](https://www.archivematica.org/mediawiki/images/thumb/1/1a/CreateSIPs-10.png/800px-CreateSIPs-10.png)
 
 The Dashboard organizes the workflow into the main functional componenents of the OAIS model: Transfer, Ingest, Archival storage, Access, and Administration. Depending on the permissions granted to the user who is logged in, some of these tabs might not be visible. 
@@ -335,7 +337,7 @@ Local administrators can create Storage Service configurations that allow the mo
 
 ### Dashboard
 
-The Dashboard is Archivematica's user interface. As mentioned earlier in the workshop, it organizes the user's workflow into the main functional componenents of the OAIS model: Transfer, Ingest, Archival storage, Access, and Administration. (A sixth tab, Preservation Planning, provides access to the Format Policy Registry.) In this screen snapshot, for example, the user is in the Transfer workflow:
+As stated earlier, the Dashboard is Archivematica's user interface. As mentioned earlier in the workshop, it organizes the user's workflow into the main functional componenents of the OAIS model: Transfer, Ingest, Archival storage, Access, and Administration. (A sixth tab, Preservation Planning, provides access to the Format Policy Registry.) In this screen snapshot, for example, the user is in the Transfer workflow:
 
 ![Sample Dashboard](https://dl.dropboxusercontent.com/u/1015702/linked_to/intro_to_archivematica/archivematica_dashboard.png)
 
@@ -354,6 +356,8 @@ In the upcoming exercise, we will add some content to Archivematica, but before 
 We already know that "transfer", in Archivematica, is the process of transforming any set of files and/or directories into a SIP. The term can also be used to describe the set of files themselves. The user adds one or more transfers to a SIP via a file selection tool provided in the Dashboard:
 
 ![Selecting files to add to a transfer](https://dl.dropboxusercontent.com/u/1015702/linked_to/intro_to_archivematica/choose_a_transfer.png)
+
+One potentially confusing aspect of the file selection tool is that the files and directories are on the Archivematica server, and typically _not_ on your local workstation. Archivematica can be configured so that the server and user's workstation share a file system so that, from the user's perspective, files added to a transfer are accessible via a local directory.
 
 As the wiki says, "Transformation may include appraisal, arrangement, description and identification of donor restricted, private or confidential contents." This includes preparing [file or folder-level metadata](https://www.archivematica.org/wiki/UM_Transfer_metadata_import_1.0) and adding submission documentation.
 
@@ -448,7 +452,7 @@ In this XML format, "appliesTo" is the name of the job presented in the dashboar
 1. Add this file to transfer packages with the filename processingMCP.xml, in the root of the package, as in this example:
 
 ```
-/you_transfer_directory
+/your_transfer_directory
    processingMCP.xml
    /objects
    /metadata
