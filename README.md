@@ -42,7 +42,7 @@ Archivematica's user interface is called the Dashboard. Its two basic functions 
 1. to allow users to add content to Archivematica and
 2. to allow users to choose from among the digital preservation options applicable to the content they or others have added.
 
-The Dashboard is fairly simple: for the most part, it provides a list of microservices and prompts the user for a decision when one needs to be made:
+The Dashboard is fairly simple. For the most part, it provides a list of microservices and prompts the user for a decision when one needs to be made:
 
 ![Archivematica Dashboard](https://www.archivematica.org/mediawiki/images/thumb/1/1a/CreateSIPs-10.png/800px-CreateSIPs-10.png)
 
